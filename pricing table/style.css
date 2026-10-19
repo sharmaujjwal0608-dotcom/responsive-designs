@@ -1,0 +1,168 @@
+/* ============================================
+   Pricing Table — Write your styles below
+   ============================================
+
+   Style the three pricing plan cards so that:
+
+   1. Plans are displayed in a single horizontal row
+   2. Plans have white background, rounded corners, shadow
+   3. The featured plan (.featured) visually stands out
+   4. Plan names and prices are centered
+   5. Buttons have colored background and rounded corners
+   6. The pricing section is centered on the page
+
+   You may use any CSS technique!
+   ============================================ */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+   background-color: #d8e0eb;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 20px;
+}
+
+/* Container */
+.pricing {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   max-width: 1000px;
+   width: 100%;
+}
+
+/* Card Common Styles */
+.plan {
+   flex: 1;
+   background-color: #f7f9fb;
+   border-radius: 18px;
+   padding: 40px 28px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 480px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+   transition: transform 0.2s ease;
+}
+
+/* Plan Title */
+.plan-name {
+   font-size: 1.35rem;
+   font-weight: 700;
+   color: #1e293b;
+   margin-bottom: 12px;
+}
+
+/* Plan Price */
+.plan-price {
+   font-size: 2.8rem;
+   font-weight: 800;
+   color: #1e293b;
+   margin-bottom: 36px;
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+}
+
+.plan-period {
+   font-size: 1rem;
+   font-weight: 500;
+   color: #64748b;
+   margin-left: 2px;
+}
+
+/* Features List */
+.plan-features {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+   margin-bottom: 40px;
+   flex-grow: 1;
+}
+
+.plan-features li {
+   font-size: 0.95rem;
+   font-weight: 500;
+   color: #475569;
+}
+
+/* Buttons */
+.plan-btn {
+   width: 100%;
+   padding: 14px 20px;
+   background-color: #2563eb;
+   color: #ffffff;
+   border: none;
+   border-radius: 12px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.plan-btn:hover {
+   opacity: 0.92;
+}
+
+.plan-btn:active {
+   transform: scale(0.98);
+}
+
+/* --- Featured / Pro Card (Center) --- */
+.plan.featured {
+   background-color: #2563eb;
+   min-height: 510px;
+   /* slightly taller */
+   box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.plan.featured .plan-name {
+   color: #ffffff;
+}
+
+.plan.featured .plan-price {
+   color: #ffffff;
+}
+
+.plan.featured .plan-period {
+   color: #dbeafe;
+}
+
+.plan.featured .plan-features li {
+   color: #e0e7ff;
+}
+
+.plan.featured .plan-btn {
+   background-color: #f1f5f9;
+   color: #2563eb;
+}
+
+/* --- Enterprise Card (Right) --- */
+.plan:last-child {
+   background-color: #fcfbeb;
+   /* Soft light cream tone */
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+   .pricing {
+      flex-direction: column;
+      max-width: 380px;
+   }
+
+   .plan,
+   .plan.featured {
+      width: 100%;
+      min-height: auto;
+   }
+}
