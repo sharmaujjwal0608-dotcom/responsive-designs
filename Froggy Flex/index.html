@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Froggy Flex - Lilypad Hop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page-container">
+    
+    <header class="game-header">
+      <h1 class="game-title">&#128056; Froggy Flex</h1>
+      <p class="game-subtitle">
+        Apply Flexbox properties on the frogs to guide each one onto its matching lilypad!
+      </p>
+    </header>
+
+    <!-- The Pond Arena -->
+    <div class="pond">
+
+      <!-- Target Lilypads Layer (Pre-positioned at top, center, and bottom) -->
+      <div class="lilypad-layer">
+        <div class="lilypad lilypad-green">
+          <div class="lilypad-notch"></div>
+          <span class="lilypad-badge">Top</span>
+        </div>
+        <div class="lilypad lilypad-yellow">
+          <div class="lilypad-notch"></div>
+          <span class="lilypad-badge">Mid</span>
+        </div>
+        <div class="lilypad lilypad-red">
+          <div class="lilypad-notch"></div>
+          <span class="lilypad-badge">Bottom</span>
+        </div>
+      </div>
+
+      <!-- Frog Layer (Students align with Flexbox!) -->
+      <div class="frog-layer">
+        
+        <!-- Green Frog -> align-self: flex-start -->
+        <div class="frog frog-green" title="Green Frog">
+          <svg viewBox="0 0 100 100" class="frog-svg" aria-label="Green Frog">
+            <ellipse cx="25" cy="80" rx="14" ry="7" fill="#15803d" />
+            <ellipse cx="75" cy="80" rx="14" ry="7" fill="#15803d" />
+            <ellipse cx="50" cy="58" rx="36" ry="30" fill="#22c55e" />
+            <ellipse cx="50" cy="62" rx="22" ry="18" fill="#86efac" />
+            <circle cx="34" cy="32" r="14" fill="#22c55e" />
+            <circle cx="34" cy="32" r="10" fill="#ffffff" />
+            <circle cx="35" cy="32" r="5" fill="#0f172a" />
+            <circle cx="66" cy="32" r="14" fill="#22c55e" />
+            <circle cx="66" cy="32" r="10" fill="#ffffff" />
+            <circle cx="65" cy="32" r="5" fill="#0f172a" />
+            <circle cx="28" cy="58" r="4" fill="#f472b6" opacity="0.6" />
+            <circle cx="72" cy="58" r="4" fill="#f472b6" opacity="0.6" />
+            <path d="M 40 60 Q 50 68 60 60" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- Yellow Frog -> align-self: center -->
+        <div class="frog frog-yellow" title="Yellow Frog">
+          <svg viewBox="0 0 100 100" class="frog-svg" aria-label="Yellow Frog">
+            <ellipse cx="25" cy="80" rx="14" ry="7" fill="#ca8a04" />
+            <ellipse cx="75" cy="80" rx="14" ry="7" fill="#ca8a04" />
+            <ellipse cx="50" cy="58" rx="36" ry="30" fill="#eab308" />
+            <ellipse cx="50" cy="62" rx="22" ry="18" fill="#fef08a" />
+            <circle cx="34" cy="32" r="14" fill="#eab308" />
+            <circle cx="34" cy="32" r="10" fill="#ffffff" />
+            <circle cx="35" cy="32" r="5" fill="#0f172a" />
+            <circle cx="66" cy="32" r="14" fill="#eab308" />
+            <circle cx="66" cy="32" r="10" fill="#ffffff" />
+            <circle cx="65" cy="32" r="5" fill="#0f172a" />
+            <circle cx="28" cy="58" r="4" fill="#fb923c" opacity="0.6" />
+            <circle cx="72" cy="58" r="4" fill="#fb923c" opacity="0.6" />
+            <path d="M 40 60 Q 50 68 60 60" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- Red Frog -> align-self: flex-end -->
+        <div class="frog frog-red" title="Red Frog">
+          <svg viewBox="0 0 100 100" class="frog-svg" aria-label="Red Frog">
+            <ellipse cx="25" cy="80" rx="14" ry="7" fill="#b91c1c" />
+            <ellipse cx="75" cy="80" rx="14" ry="7" fill="#b91c1c" />
+            <ellipse cx="50" cy="58" rx="36" ry="30" fill="#ef4444" />
+            <ellipse cx="50" cy="62" rx="22" ry="18" fill="#fca5a5" />
+            <circle cx="34" cy="32" r="14" fill="#ef4444" />
+            <circle cx="34" cy="32" r="10" fill="#ffffff" />
+            <circle cx="35" cy="32" r="5" fill="#0f172a" />
+            <circle cx="66" cy="32" r="14" fill="#ef4444" />
+            <circle cx="66" cy="32" r="10" fill="#ffffff" />
+            <circle cx="65" cy="32" r="5" fill="#0f172a" />
+            <circle cx="28" cy="58" r="4" fill="#f43f5e" opacity="0.6" />
+            <circle cx="72" cy="58" r="4" fill="#f43f5e" opacity="0.6" />
+            <path d="M 40 60 Q 50 68 60 60" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
