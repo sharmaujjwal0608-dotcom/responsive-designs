@@ -1,0 +1,84 @@
+/* ===================================================
+   YOUR CODE STARTS HERE
+   Follow Tasks 1 to 6 in order to style the card!
+=================================================== */
+
+/* Task 1: Universal Reset (margin: 0, padding: 0, box-sizing: border-box) */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tasks 2, 3, and 4: Card Sizing, Spacing, Border, and Radius */
+.notification-card {
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+/* Task 5: Vertical Separation for Content */
+.notification-title {
+  margin-bottom: 8px;
+}
+
+.notification-body {
+  margin: 20px;
+}
+
+/* Task 6: Button Box Model and Hover State */
+.notification-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.notification-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===================================================
+   YOUR CODE ENDS HERE
+   (Pre-styled page setup - do not modify below)
+=================================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  padding: 20px;
+}
+
+.notification-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.notification-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.notification-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.notification-btn {
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
