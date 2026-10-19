@@ -1,0 +1,115 @@
+/* ===================================================
+   YOUR CODE STARTS HERE
+   Follow Tasks 1 to 6 in order to build the navbar!
+=================================================== */
+
+/* Task 1: Universal Reset (margin: 0, padding: 0, box-sizing: border-box) */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Tasks 1 & 2: Navbar Container Layout, Spacing, and Surface */
+.navbar {
+  display: flex;
+  padding: 30px 30px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Task 3: Navigation Links Horizontal Flexbox */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+/* Task 4: Link Typography and Hover */
+.nav-link {
+  text-decoration: none;
+  color: #64748b;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0f172a;
+}
+
+/* Task 5: Call to Action Button and Hover */
+.btn-nav {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background-color: black;
+  transition: color 0.2s ease;
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+/* Task 6: Mobile Responsive Layout */
+@media (max-width: 640px) {
+  .navbar {
+    padding-top: 25px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* ===================================================
+   YOUR CODE ENDS HERE
+   (Pre-styled brand typography & demo page layout)
+=================================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.nav-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-link,
+.btn-nav {
+  transition: all 0.2s ease;
+}
+
+.page-content {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.page-content h1 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.page-content p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+}
